@@ -1,0 +1,127 @@
+body
+{
+	background-image: url("../background/background4.jpg");
+	#background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 15px;
+}
+
+.title
+{
+	text-shadow: 2px 2px 2px silver;
+}
+.userids
+{
+	border-radius: 0.5em;
+	width: 250px;
+	height: 20px;
+}
+.passwords
+{
+	border-radius: 0.5em;
+	width: 250px;
+	height: 20px;
+}
+.return
+{
+	background-color: #EEE8AA;
+	position: relative;
+	left: 1px;
+	top: 1px;
+	border-radius: 0.5em;
+	cursor: pointer;
+	font-weight: bold;
+}
+.return:hover
+{
+	color: black;
+	background: white;
+}
+
+.namebox
+{
+	width:  300px;
+	border-radius: 0.5em;
+	margin-bottom: 10px;
+}
+
+.textbox
+{
+	width:  700px;
+	height: 100px;
+	border: 2px solid #000;
+	border-radius: 0.5em;
+	padding: 5px;
+	margin-top: 10px;
+}
+.comment
+{
+	border: 2px solid #000;
+	border-radius: 0.5em;
+	border-style: outset;
+	width: 700px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+	font-size: 110%;
+}
+
+.commentname
+{
+	margin: 3px 0px 1px 3px;
+}
+.commenttime
+{
+	margin: 0px 0px 0px 3px;
+}
+.info
+{
+	white-space: pre-line;
+	margin: 1px 0px 1px 3px;
+}
+.resize
+{
+	width: 90%;
+	height: 90%;
+	margin: 5px 0px 5px 30px;
+}
+.buttons
+{
+	margin: 2px 5px 5px 0px;
+}
+.button0
+{	
+	background-color: #EEE8AA;
+	border-radius: 0.5em;
+	cursor: pointer;
+	width: 75px;
+	height: 30px;
+	font-weight: bold;
+}
+.button0:hover
+{
+	color: black;
+	background: white;
+}
+.button1
+{	
+	background-color: #EEE8AA;
+	border-radius: 0.5em;
+	cursor: pointer;
+	font-size: 85%;
+}
+.button1:hover
+{
+	color: black;
+	background: white;
+}
+.display
+{
+	display: flex;
+	justify-content: flex-end;
+}
+.from
+{
+	margin: 0px 5px 3px 0px;
+}

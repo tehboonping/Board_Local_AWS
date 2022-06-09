@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  web:
+    container_name: board_web
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - ./app/web/:/var/www/html/
+      - ./aws/:/var/www/html/aws/
+    env_file:
+      - .env
+    depends_on:
+      - vpc-ssh-tunnel
+
+  manager:
+    container_name: board_manager
+    image: boardlocal_web
+    ports:
+      - 8085:80
+    volumes:
+      - ./app/manager/:/var/www/html/
+      - ./aws/:/var/www/html/aws/
+    depends_on:
+      - web
+
+  vpc-ssh-tunnel:
+    container_name: vpc-ssh-tunnel
+    build: ./vpc-ssh-tunnel/
+    env_file:
+      - .env
+      - .env.local
